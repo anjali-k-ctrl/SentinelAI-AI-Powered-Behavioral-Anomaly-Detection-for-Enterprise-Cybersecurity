@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 from sqlalchemy.orm import Session
-from .database import UserProfile, LogEntry, SessionLocal
+from database import UserProfile, LogEntry, SessionLocal
 
 class BehaviorModel:
     def __init__(self):
