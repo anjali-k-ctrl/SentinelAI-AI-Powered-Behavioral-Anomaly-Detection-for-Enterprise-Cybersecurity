@@ -13,11 +13,11 @@ from sqlalchemy.orm import Session
 from database import (
     engine, init_db, get_db, LogEntry, UserProfile, Alert, SystemSetting, SessionLocal
 )
-from .synthetic_generator import SyntheticDataGenerator
-from .behavior_model import BehaviorModel
-from .lstm_detector import SequenceDetector
-from .classifier import ThreatClassifier
-from .explainability import ExplainabilityEngine
+from synthetic_generator import SyntheticDataGenerator
+from behavior_model import BehaviorModel
+from lstm_detector import SequenceDetector
+from classifier import ThreatClassifier
+from explainability import ExplainabilityEngine
 
 # Initialize database
 init_db()
