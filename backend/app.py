@@ -10,7 +10,7 @@ from fastapi import FastAPI, Depends, BackgroundTasks, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
-from .database import (
+from database import (
     engine, init_db, get_db, LogEntry, UserProfile, Alert, SystemSetting, SessionLocal
 )
 from .synthetic_generator import SyntheticDataGenerator
