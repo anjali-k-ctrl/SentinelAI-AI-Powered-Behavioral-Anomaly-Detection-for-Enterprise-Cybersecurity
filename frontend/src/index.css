@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-honeywell-red: #EE3124;
+  --color-honeywell-dark: #0B0F19;
+  --color-honeywell-card: #151C2C;
+  --color-honeywell-border: #232E45;
+  --color-honeywell-highlight: #1E293B;
+  --color-honeywell-text: #F8FAFC;
+  --color-honeywell-textMuted: #94A3B8;
+  --font-sans: "Inter", sans-serif;
+}
+
+@utility glass-card {
+  background: rgba(21, 28, 44, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(35, 46, 69, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(238, 49, 36, 0.4);
+    box-shadow: 0 12px 40px 0 rgba(238, 49, 36, 0.08);
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-honeywell-dark text-honeywell-text font-sans antialiased overflow-x-hidden;
+    background-color: #0b0f19;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #232e45;
+}
