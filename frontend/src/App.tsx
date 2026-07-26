@@ -25,7 +25,7 @@ import Analytics from "./pages/Analytics.tsx";
 import Settings from "./pages/Settings.tsx";
 
 // API Base configuration
-export const API_BASE = "http://localhost:8000/api";
+export const API_URL = "https://sentinelai-backend-cpdb.onrender.com";
 
 export interface SystemSettings {
   anomaly_threshold: number;
