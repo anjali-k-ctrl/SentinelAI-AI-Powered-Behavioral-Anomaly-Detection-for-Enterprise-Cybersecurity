@@ -6,6 +6,17 @@ Designed with a premium dark theme inspired by **Honeywell’s brand guidelines*
 
 ---
 
+# 🚀 Live Demo
+
+Frontend:
+https://sentinelai-frontend-t69w.onrender.com
+
+Backend:
+https://sentinelai-backend-cpdb.onrender.com
+
+API Docs:
+https://sentinelai-backend-cpdb.onrender.com/docs
+
 ## 🚀 Key Innovation Highlights
 
 1. **Unsupervised Outlier Isolation (Stage 1)**: Utilizes a non-parametric `Isolation Forest` to evaluate multidimensional deviations (hour, session duration, geo, IP, auth, device, resources) without requiring labeled historic data.
